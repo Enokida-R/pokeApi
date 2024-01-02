@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ポケモン図鑑</title>
+</head>
+<body>
+    <div id="pokemon-cards">
+        <div class="pokemon-card sub" id="prev-pokemon">
+            <img id="prev-poke-img" src="" alt="Previous Pokemon">
+            <div id="loading-indicator" style="display: none;">Loading...</div>
+            <p id="prev-poke-type"></p>
+            <p id="prev-poke-name"></p>
+        </div>
+        <button id="preve">＜</button>
+        <div class="pokemon-card main" id="current-pokemon">
+            <img id="current-poke-img" src="" alt="Current Pokemon">
+            <div id="loading-indicator2" style="display: none;">Loading...</div>
+            <p id="current-poke-name"></p>
+            <p id="current-poke-type"></p>
+        </div>
+        <button id="next">＞</button>
+        <div class="pokemon-card sub" id="next-pokemon">
+            <img id="next-poke-img" src="" alt="Next Pokemon">
+            <div id="loading-indicator3" style="display: none;">Loading...</div>
+            <p id="next-poke-name"></p>
+        </div>
+    </div>
+    <select id="pokemon-selector"></select>
+    <button id="button">表示</button>
+    <script src="script.js"></script>
+</body>
+</html>
